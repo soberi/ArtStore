@@ -1,3 +1,71 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack: Tahoma, Verdana, Segoe, sans-serif;
+$primary-color: #4b545a;
+$secondary-color: #e4e6e8;
+
+html {
+	background-image: url('AS-background.jpg');
+	background-repeat: no-repeat;
+	font-family: $font-stack;
+}
+
+
+body {
+	margin: 20px;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: $primary-color;
+}
+
+.navbar-default {
+	background-color: $primary-color;
+	border-color: #52595d;
+	border-radius: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 1px 1px 1px rgba(95, 101, 105, 0.32);
+} 
+
+.navbar-default .navbar-nav>li {
+
+	a {
+  	color: $secondary-color;
+  	background-color: $primary-color;
+  	transition: 600ms;
+	}
+
+	a:hover {
+		color: $primary-color;
+  	background-color: $secondary-color;
+	}
+
+}
+
+h1 {
+	font-weight: 350;
+	text-align: center;
+}
+
+h2 {
+	font-weight: 300;
+	text-align: center;
+}
+
+
+img {
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	background-color: $primary-color;
+	color: $secondary-color;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 15px;
+	height: 50px;
+	box-shadow: 4px 1px 1px 3px rgba(95, 101, 105, 0.32);
+}
