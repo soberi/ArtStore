@@ -7,8 +7,13 @@ $primary-color: #4b545a;
 $secondary-color: #e4e6e8;
 
 html {
+	height: 100%;
 	background-image: url('AS-background.jpg');
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	font-family: $font-stack;
 }
 
