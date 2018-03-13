@@ -7,8 +7,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-  	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
@@ -33,9 +31,9 @@
 
     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       		<ul class="nav navbar-nav navbar-right">
-        		<li><a href="#">home</a></li>
-        		<li><a href="#">about</a></li>
-        		<li><a href="#">contact</a></li>
+        		<li><%= link_to "home", root_path %></a></li>
+        		<li><%= link_to "about", simple_pages_about_path %></li>
+        		<li><%= link_to "contact", simple_pages_contact_path %></li>
       		</ul>
     		</div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
