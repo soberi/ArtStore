@@ -22,9 +22,18 @@ h3 {
 	}
 }
 
+.row {
+	margin: 0;
+}
+
 // product index page
 .product-item {
 	text-align: center;
+
+	img {
+		transition: 600ms;
+		width: 100%;
+	}
 
 	img:hover {
   	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
@@ -57,8 +66,9 @@ h3 {
 	}
 }
 
+//show product page
 .product-image {
-	display: inline;
+	padding: 20px;
 }
 
 // _form patial
@@ -69,5 +79,7 @@ h3 {
 input, textarea {
 	width: 50%;
 }
+
+
 
 

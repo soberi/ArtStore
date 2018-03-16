@@ -6,4 +6,6 @@
 		<li><strong>product price: </strong><%= number_to_currency(@order.product.price.to_f, unit: "€") %></li>
 		<li><strong>total price: </strong><%= number_to_currency(@order.total.to_f, unit: "€") %></li>
 	</ul>	
+
+	<h3><%= link_to "back", orders_path %></h3>
 </div>
