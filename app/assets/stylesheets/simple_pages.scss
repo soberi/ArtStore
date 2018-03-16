@@ -55,12 +55,19 @@ body {
 
 }
 
-.navbar-brand>img {
-  position: absolute;
-  height: 51px;
-  top: 0px;
-  left: 30px;
+.navbar-brand {
+	img {
+  	position: absolute;
+  	height: 51px;
+  	top: 0px;
+  	left: 30px;
+  }
+
+  	img:hover {
+  		opacity: 0.8;
+  	}
 }
+
 
 .page-section {
 	margin-bottom: 50px;

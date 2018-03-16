@@ -9,7 +9,11 @@
   	
   	<p><%= link_to 'show', product %> |
   	<%= link_to 'edit', edit_product_path(product) %> |
-  	<%= link_to 'destroy', product, method: :delete, data: { confirm: 'are you sure?' } %></p>
+  	
+    <%= link_to product, class: "btn", method: :delete, data: { confirm: 'are you sure?' } do %>
+      <i class="glyphicon glyphicon-trash"></i>
+    <% end %>
+    </p>
   	</div> 
 
 </div>

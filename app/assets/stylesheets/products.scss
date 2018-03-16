@@ -76,6 +76,18 @@ h3 {
  text-align: center;
 }
 
+.form-action {
+	margin-top: 20px;
+	transition: 600ms;
+	
+	input {
+		border: 0;
+		background-color: transparent;
+		width: 100%;
+
+	}
+}
+
 input, textarea {
 	width: 50%;
 }
