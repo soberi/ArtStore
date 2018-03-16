@@ -12,13 +12,17 @@ html {
 
 body {
 	background-image: url('AS-background.jpg');
-	background-repeat: no-repeat;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin: 0;
-	padding-top: 50px;	
+	padding-top: 50px;
+
+	a {
+		text-decoration: none;
+		color: $primary-color;
+	}
 }
 
 .section-backdrop {
@@ -49,6 +53,13 @@ body {
   	background-color: $secondary-color;
 	}
 
+}
+
+.navbar-brand>img {
+  position: absolute;
+  height: 51px;
+  top: 0px;
+  left: 30px;
 }
 
 .page-section {
@@ -102,6 +113,48 @@ h3 {
 .carousel-control:hover {
 	transition: 800ms;
 	opacity: 0.3;
+}
+
+.first-contact {
+	
+	button {
+		background-color: $primary-color;
+		color: $secondary-color;
+		display: inline-block;
+		position: relative;
+		width: 270px;
+		border: none;
+		font-size: 1.5em;
+		padding: 20px;
+		margin: 5px;
+
+		a {
+		  color: $secondary-color;
+		  text-decoration: none;
+			transition: 600ms;
+		}
+
+		a:after {
+  		content: '\00bb';
+  		position: absolute;
+  		opacity: 0;
+  		top: 11px;
+    	right: 25px;
+    	font-size: 1.5em;
+  		transition: 600ms;
+		}
+	}	
+
+	button:hover a {
+		padding-right: 25px;
+	}
+		
+	button:hover a:after {
+		opacity: 1;
+		right: 45px;
+	}
+
+	
 }
 
 
