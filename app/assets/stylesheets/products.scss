@@ -84,7 +84,6 @@ h3 {
 		border: 0;
 		background-color: transparent;
 		width: 100%;
-
 	}
 }
 
@@ -92,6 +91,14 @@ input, textarea {
 	width: 50%;
 }
 
+//orders index page
+.order-item {
+	padding: 10px;
+	margin: 10px 0;
+	width: 100%;
+	background-color: $secondary-color;
+	min-height: 100px;
+}
 
 
 

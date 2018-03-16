@@ -1,45 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ArtStore</title>
-   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-    <%= csrf_meta_tags %>
+    <%= render 'simple_pages/head' %>
   </head>
 
   <body>
 
-		<nav class="navbar navbar-default navbar-fixed-top">
-  		<div class="container-fluid">
-    	<!-- Brand and toggle get grouped for better mobile display -->
-    		<div class="navbar-header">
-      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        		<span class="sr-only">Toggle navigation</span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-      		</button>
-      		<a class="navbar-brand" href="#"><%= image_tag "brand-logo_temporary.png" %></a>
-    		</div>
-
-    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      		<ul class="nav navbar-nav navbar-right">
-        		<li><%= link_to "home", root_path %></a></li>
-        		<li><%= link_to "about", simple_pages_about_path %></li>
-        		<li><%= link_to "contact", simple_pages_contact_path %></li>
-            <li><%= link_to "products", products_path %></li>
-            <li><%= link_to "orders", orders_path %></li>
-      		</ul>
-    		</div><!-- /.navbar-collapse -->
-  		</div><!-- /.container-fluid -->
-		</nav>
+		<%= render 'simple_pages/nav' %>
     
     <div class="container section-backdrop">
       <%= yield %>
