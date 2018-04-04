@@ -159,9 +159,12 @@ h3 {
 	button:hover a:after {
 		opacity: 1;
 		right: 45px;
-	}
+	}	
+}
 
-	
+.about-section {
+	background-color: $secondary-color;
+	padding: 20px;
 }
 
 
