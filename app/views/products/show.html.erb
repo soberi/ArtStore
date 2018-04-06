@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container product-data">
+<%= image_tag(@product.image_url, class: "img-responsive product-show") %>
+
+<div class="container-fluid product-data">
+  
+  <h3><%= link_to 'edit', edit_product_path(@product) %> |
+  <%= link_to 'back to products', products_path %></h3>
+
   <p>
     <strong>name:</strong>
     <%= @product.name %>
@@ -26,11 +32,6 @@
     <%= @product.image_url %>
   </p>
 
-
-  <h3><%= link_to 'edit', edit_product_path(@product) %> |
-  <%= link_to 'back to products', products_path %></h3>
 </div>
 
-<div class="container-fluid product-image">
-  <%= image_tag(@product.image_url, class: "img-responsive") %>
-</div>
+
