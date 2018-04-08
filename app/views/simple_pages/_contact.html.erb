@@ -2,9 +2,23 @@
 	<h1>contact soberi</h1>
 	<h2>get in touch here</h2>
 
-	<ul>
-		<li>phone</li>
-		<li>skype</li>
-		<li>email</li>
-	</ul>
-</div>
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+	<div class="row">
+		<div class="form-group">
+			<%= form.label :name %>
+			<%= form.text_field :name, class: "form-control", placeholder: "enter name" %>
+		</div>
+		<div class="form-group">
+			<%= form.label :email %>
+			<%= form.text_field :email, class: "form-control", placeholder: "enter email" %>
+		</div>
+		<div class="form-group">
+			<%= form.label :message %>
+			<%= form.text_area :message, class: "form-control", placeholder: "enter message", rows: 5 %>
+		</div>
+	</div>
+
+	<%= form.submit "Send", class: "form_label" %>
+<% end %>
