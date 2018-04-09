@@ -29,6 +29,23 @@
         <li><%= link_to "products", products_path %></li>
         <li><%= link_to "orders", orders_path %></li>
       </ul>
+      <ul class="nav navbar-nav pull-right">
+        <li>
+          <% if user_signed_in? %>
+            <%= link_to('logout', destroy_user_session_path, method: :delete) %>
+          <% else %>
+            <%= link_to('login', new_user_session_path) %>
+          <% end %>
+        </li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+
+
+
+
+
+
+
+
 </nav>

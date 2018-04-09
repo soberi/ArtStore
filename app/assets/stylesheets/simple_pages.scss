@@ -90,6 +90,12 @@ body {
 	}
 }
 
+.alert,
+.notice {
+	position: absolute;
+  z-index: 2;
+}
+
 .page-section {
 	margin-bottom: 50px;
 	margin-top: 50px;
@@ -187,7 +193,6 @@ h3 {
 	background-color: $secondary-color;
 	padding: 20px;
 }
-
 
 footer {
 	background-color: $primary-color;
