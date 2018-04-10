@@ -93,7 +93,8 @@ body {
 .alert,
 .notice {
   z-index: 2;
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 .page-section {
