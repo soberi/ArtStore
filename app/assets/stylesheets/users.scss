@@ -45,3 +45,18 @@ $secondary-color: #e4e6e8;
 	}
 }
 
+table {
+	color: $primary-color;
+	background-color: $secondary-color;
+	margin: 20px auto; 
+}
+
+td, 
+th {
+		padding: 10px;
+}
+
+.user-page {
+		
+}
+
