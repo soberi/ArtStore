@@ -92,8 +92,8 @@ body {
 
 .alert,
 .notice {
-	position: absolute;
   z-index: 2;
+  position: relative;
 }
 
 .page-section {

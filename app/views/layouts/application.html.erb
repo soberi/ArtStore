@@ -5,8 +5,16 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+      <div class="notice alert-success alert-dismissable" role="alert">
+        <%= notice %>
+      </div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-danger" role="alert" >
+        <%= alert %>
+      </div>
+    <% end %>
 		<%= render 'simple_pages/nav' %>
     
     
