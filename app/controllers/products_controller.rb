@@ -5,9 +5,9 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     if Rails.env == "development"
-      name_env = "name LIKE ?"
+      search_term = "name LIKE ?"
     else
-      name_env = "name ilike ?"
+      search_term = "name ilike ?"
     end
 
     if params[:q]
