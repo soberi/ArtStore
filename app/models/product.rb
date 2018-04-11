@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+	has_many :orders
 
 	def self.search(search_term)
 		if Rails.env.development?
