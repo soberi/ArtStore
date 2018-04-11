@@ -30,7 +30,10 @@
     <strong>image url:</strong>
     <%= @product.image_url %>
   </p>
-
 </div>
 
+<div class="container-fluid comment-section">
+  <%= @product.highest_rating_comment %>
+  <%= @product.lowest_rating_comment %>
+</div>
 
