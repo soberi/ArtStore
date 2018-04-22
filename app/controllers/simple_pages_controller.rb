@@ -14,7 +14,7 @@ class SimplePagesController < ApplicationController
   	ActionMailer::Base.mail(from: @email, 
   		to: "soberi.artstore@gmail.com", 
   		subject: "A message from #{@name}", 
-  		body: @message).deliver_now
+  		body: @message).deliver_now 
   end
 
 end

@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <%= image_tag(@product.image_url, class: "img-responsive product-show") rescue nil %>
 
@@ -31,7 +30,10 @@
     <strong>image url:</strong>
     <%= @product.image_url %>
   </p>
-
 </div>
 
+<div class="container-fluid comment-section">
+  <%= @product.highest_rating_comment %>
+  <%= @product.lowest_rating_comment %>
+</div>
 

@@ -13,10 +13,13 @@ $secondary-color: #e4e6e8;
 
 }
 
-.new_user {
+.new-user,
+.new_user,
+.edit_user {
 	max-width: 300px;
-	margin: 0 auto;
+	margin: 20px auto;
 	padding: 15px;
+	text-align: center;
 
 	.btn {
 		margin-top: 10px;
@@ -43,5 +46,20 @@ $secondary-color: #e4e6e8;
 	input {
 		width: 100%;
 	}
+}
+
+table {
+	color: $primary-color;
+	background-color: $secondary-color;
+	margin: 20px auto; 
+}
+
+td, 
+th {
+		padding: 10px;
+}
+
+.user-page {
+		
 }
 

@@ -23,6 +23,9 @@
       </form>
       		
       <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li><%= link_to 'your account', edit_user_registration_path(current_user) %></li>
+        <% end %>
         <li><%= link_to "home", root_path %></li>
         <li><%= link_to "about", simple_pages_about_path %></li>
         <li><%= link_to "contact", simple_pages_contact_path %></li>

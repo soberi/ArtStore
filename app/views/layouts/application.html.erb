@@ -5,12 +5,20 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+      <div class="alert alert-success" role="alert">
+        <%= notice %>
+      </div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-danger" role="alert" >
+        <%= alert %>
+      </div>
+    <% end %>
 		<%= render 'simple_pages/nav' %>
     
     
-    <div class="container-fluid section-backdrop">
+    <div class="container section-backdrop">
       <%= yield %>
     </div>
     
