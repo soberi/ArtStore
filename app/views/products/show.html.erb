@@ -30,10 +30,20 @@
     <strong>image url:</strong>
     <%= @product.image_url %>
   </p>
+
+  <p>rated: 
+    <div class="rated" data-score="<%= @product.average_rating %>"></div>
+  </p>
 </div>
+
+<%= render "new_comment" %>
 
 <div class="container-fluid comment-section">
   <%= @product.highest_rating_comment %>
   <%= @product.lowest_rating_comment %>
 </div>
+
+<%= render "comments" %>
+
+
 
