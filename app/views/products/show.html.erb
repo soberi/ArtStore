@@ -39,8 +39,10 @@
 <%= render "new_comment" %>
 
 <div class="container-fluid comment-section">
-  <%= @product.highest_rating_comment %>
-  <%= @product.lowest_rating_comment %>
+  <p>highest rating YAY!!!</p>
+  <div class="rated" data-score="<%= @product.highest_rating_comment %>"></div>
+  <p>lowest rating AW :(</p>
+  <div class="rated" data-score="<%= @product.lowest_rating_comment %>"></div>
 </div>
 
 <%= render "comments" %>

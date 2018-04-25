@@ -6,7 +6,10 @@
 <div class="container-fluid">
   <div class="row"> 
     <%= render @products %>
-  </div> 
+  </div>
+  <div class="apple_pagination">
+  	<%= will_paginate @comments %>
+	</div> 
 </div>
 
 
