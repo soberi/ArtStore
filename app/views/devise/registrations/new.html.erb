@@ -7,7 +7,7 @@
 
   <div class="field custom-form-field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "enter email", type: "email", required: true %>
   </div>
 
   <div class="field custom-form-field">
@@ -15,12 +15,23 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off", class: "form-control", required: true %>
   </div>
 
   <div class="field custom-form-field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", required: true %>
+  </div>
+
+  <h3>don't forget to give yourself a user name</h3>
+  <div class="field custom-form-field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autocomplete: "off", class: "form-control", placeholder: "first name" %>
+  </div>
+
+  <div class="field custom-form-field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, autocomplete: "off", class: "form-control", placeholder: "last name" %>
   </div>
 
   <button class="actions btn">
