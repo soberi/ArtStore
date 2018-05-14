@@ -9,6 +9,13 @@ class UserMailer < ApplicationMailer
 				subject: "A new message from #{name}")
 	end
 
+	def welcome(user)
+		attachments.inline['mailer_img.jpg'] = File.read('app/assets/images/mailer_img.jpg')
+		@appname = "Soberi ArtStore"
+		mail(to: user.email,
+				subject: "Welcome to #{@appname}" )
+	end
+
 	def thank_you
 		@name = params[:name]
 		@email = [:email]
