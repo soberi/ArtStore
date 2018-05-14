@@ -1,7 +1,7 @@
 <div id="as-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <% @products.each do |product|%> 
+    <% @products.with_image.each do |product|%> 
     
       <li data-target="#as-carousel" data-slide-to="<%= product.id - 1 %>" class="<%= "active" if product == @products.first %>"></li>
     
