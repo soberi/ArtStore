@@ -3,7 +3,7 @@
   <ol class="carousel-indicators">
     <% @products.with_image.each do |product|%> 
     
-      <li data-target="#as-carousel" data-slide-to="<%= product.id - 1 %>" class="<%= "active" if product == @products.first %>"></li>
+      <li data-target="#as-carousel" data-slide-to="<%= product.id - 1 %>" class="<%= "active" if product == @products.with_image.first %>"></li>
     
     <% end %>
   </ol>
@@ -11,7 +11,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
      <% @products.each do |product|%> 
-    	<div class="item<%= " active" if product == @products.first %>">
+    	<div class="item<%= " active" if product == @products.with_image.first %>">
       	<%= image_tag(product.image_url) rescue nil %>
       	<div class="carousel-caption">
         	<h2><%= link_to product.name, product %></h2>
