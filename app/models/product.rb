@@ -3,9 +3,9 @@ class Product < ApplicationRecord
 	has_many :comments
 	validates :name, presence: true
 
-	scope :with_image, -> { where.not(image_url: [nil, '']) }
-	#{ where("image_url IS NOT NULL AND image_url != ''") }
-
+	scope :with_image, -> { where("image_url IS NOT NULL AND image_url != ''") }
+	#{ where.not(image_url: [nil, '']) }
+	
 	def self.search(search_term)
 		if Rails.env.development?
 			Product.where("name LIKE ?", "%#{search_term}%")
