@@ -4,8 +4,7 @@ class SimplePagesController < ApplicationController
   end
 
   def landing_page
-    @products = Product.with_image.limit(4)
-    #.select { |product| product.image_url != "" } 
+    @products = Product.with_image.limit(4) 
   end
 
   def thank_you
