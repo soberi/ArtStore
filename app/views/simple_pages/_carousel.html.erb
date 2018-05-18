@@ -1,22 +1,24 @@
 <div id="as-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <% @products.with_image.each do |product|%> 
-    
-      <li data-target="#as-carousel" data-slide-to="<%= product.id - 1 %>" class="<%= "active" if product == @products.with_image.first %>"></li>
-    
+    <% @products.each do |product|%> 
+      <% if product.image_url.present? %> 
+        <li data-target="#as-carousel" data-slide-to="<%= product.id - 1 %>" class="<%= "active" if product == @products.first %>"></li>
+      <% end %>
     <% end %>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-     <% @products.with_image.each do |product|%> 
-    	<div class="item<%= " active" if product == @products.with_image.first %>">
-      	<%= image_tag(product.image_url) rescue nil %>
-      	<div class="carousel-caption">
-        	<h2><%= link_to product.name, product %></h2>
-      	</div>
-    	</div>
+     <% @products.each do |product|%>
+      <% if product.image_url.present? %> 
+        <div class="item<%= " active" if product == @products.first %>">
+      	  <%= image_tag(product.image_url) rescue nil %>
+          <div class="carousel-caption">  
+            <h2><%= link_to product.name, product %></h2>
+          </div>
+        </div>
+      <% end %>
     <% end %>
   </div>
 
