@@ -13,15 +13,15 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <!-- search bar -->
-      <form class="navbar-form navbar-left">
+      <div class="navbar-form navbar-left">
         <div class="form-group">
-        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+        <%= form_with(url: "/products", method: 'get', local: true) do |form| %>
           <%= form.label :q, 'Take a look' %>
           <%= form.text_field :q, id: 'q', value: params[:q] %>
           <%= form.submit 'Search', class: 'btn' %>
         <% end %>
         </div>
-      </form>
+      </div>
       		
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
