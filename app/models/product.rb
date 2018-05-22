@@ -5,7 +5,7 @@ class Product < ApplicationRecord
 
 	#does not work in production env (if attemptimg to use must
 	#add scope to _carousel partial and simple_pages_controller
-	#scope :with_image, -> { where("image_url IS NOT NULL AND image_url != ''") }
+	scope :with_image, -> { where("image_url IS NOT NULL AND image_url != ''").limit(4) }
 	#{ where.not(image_url: [nil, '']) }
 	
 	def self.search(search_term)
