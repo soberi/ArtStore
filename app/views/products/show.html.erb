@@ -22,11 +22,6 @@
   </p>
 
   <p>
-    <strong>price:</strong>
-    <%= number_to_currency(@product.price.to_f, unit: "€") %>
-  </p>
-
-  <p>
     <strong>image url:</strong>
     <%= @product.image_url %>
   </p>
@@ -34,6 +29,16 @@
   <p>rated: 
     <div class="rated" data-score="<%= @product.average_rating %>"></div>
   </p>
+  <br>
+  <p>
+    <strong>price:</strong>
+    <%= number_to_currency(@product.price, unit: "€") %>
+  </p>
+  <%= form_with(url: '/payments/create') do |form| %>
+    <%= render partial: 'shared/stripe_checkout_button' %>
+  <% end %>
+
+  
 </div>
 
 <%= render "new_comment" %>

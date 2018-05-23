@@ -5,7 +5,7 @@
   	<div class="product-info">
   	<h3><%= link_to product.name, product %></h3>
   	
-  	<p><%= product.description %> | <%= product.medium %> | <%= number_to_currency(product.price.to_f, unit: "€") %></p>
+  	<p><%= product.description %> | <%= product.medium %> | <%= number_to_currency(product.price, unit: "€") %></p>
   	
   	<p><%= link_to 'show', product %> |
   	<%= link_to 'edit', edit_product_path(product) %> |
