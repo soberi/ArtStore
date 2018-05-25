@@ -3,7 +3,8 @@
   	<%= link_to(image_tag(product.image_url, class: "img-responsive"), product) rescue nil %>
   	
   	<div class="product-info">
-  	<h3><%= link_to product.name, product %></h3>
+  	<% logger.debug "Product: #{product.name}" %>
+    <h3><%= link_to product.name, product %></h3>
   	
   	<p><%= product.description %> | <%= product.medium %> | <%= number_to_currency(product.price, unit: "€") %></p>
   	
