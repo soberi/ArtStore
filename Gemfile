@@ -72,4 +72,5 @@ gem 'rails-controller-testing'
 
 gem 'stripe'
 
+gem 'simplecov', require: false, group: :test
 
