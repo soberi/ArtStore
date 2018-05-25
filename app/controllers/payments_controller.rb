@@ -1,5 +1,5 @@
 class PaymentsController < ApplicationController
-
+	
 	def create
 		@product = Product.find(params[:product_id])
 		@user = current_user
@@ -22,7 +22,7 @@ class PaymentsController < ApplicationController
 					user_id: @user.id,
 					total: (@product.price*100).to_i
 				)
-				flash[:success] = "Your payment was successfully processed"
+				flash[:success] = "Your payment was successful!"
 			end
 
 		rescue Stripe::CardError => e

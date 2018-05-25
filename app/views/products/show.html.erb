@@ -34,9 +34,13 @@
     <strong>price:</strong>
     <%= number_to_currency(@product.price, unit: "€") %>
   </p>
-  <%= form_with(url: '/payments/create') do |form| %>
-    <%= render partial: 'shared/stripe_checkout_button' %>
-    <%= hidden_field_tag(:product_id, @product.id) %>
+  <% if user_signed_in? %>
+    <%= form_with(url: '/payments/create') do |form| %>
+      <%= render partial: 'shared/stripe_checkout_button' %>
+      <%= hidden_field_tag(:product_id, @product.id) %>
+    <% end %>
+  <% else %>
+    <%= link_to 'create an account to buy', new_user_registration_path %>
   <% end %>
 
   
