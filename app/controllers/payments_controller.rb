@@ -22,7 +22,7 @@ class PaymentsController < ApplicationController
 					user_id: @user.id,
 					total: (@product.price*100).to_i
 				)
-				flash[:success] = "Your payment was successful!"
+				flash[:notice] = "Thanks for buying #{@product.name}, your order is on its way!"
 			end
 
 		rescue Stripe::CardError => e
