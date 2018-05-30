@@ -1,6 +1,6 @@
 <div class="container sign-up-page">
 
-<h2>come on, sign up</h2>
+<h2>Are you a new customer?</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -23,7 +23,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", required: true %>
   </div>
 
-  <h3>don't forget to give yourself a user name</h3>
+  <h2>Don't forget to add your name</h2>
   <div class="field custom-form-field">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name, autocomplete: "off", class: "form-control", placeholder: "first name" %>

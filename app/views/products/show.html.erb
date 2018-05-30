@@ -40,7 +40,7 @@
       <%= hidden_field_tag(:product_id, @product.id) %>
     <% end %>
   <% else %>
-    <%= link_to 'create an account to buy', new_user_registration_path %>
+    <h3><%= link_to 'new customer? click here to set up your account', new_user_registration_path %></h3>
   <% end %>
 
   
