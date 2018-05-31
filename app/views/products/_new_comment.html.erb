@@ -2,7 +2,7 @@
 
 <% if signed_in? %>
 	<h3>So... what do you think?</h3>
-	<%= form_for([@product, @product.comments.build]) do |f| %>
+	<%= form_for([@product, @product.comments.build], remote: true) do |f| %>
 		<p>
 			<%= f.label :body, "Comments" %><br>
 			<%= f.text_area :body %>

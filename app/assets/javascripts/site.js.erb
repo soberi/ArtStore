@@ -1,6 +1,5 @@
-$(document).on('turbolinks:load', function(){
-	
 	//for products star ratings
+var refreshRating = function() {
 	$('.rating').raty({
 		starHalf: '<%= asset_path 'star-half.png' %>',
 		starOff: '<%= asset_path 'star-off.png' %>',
@@ -17,6 +16,12 @@ $(document).on('turbolinks:load', function(){
 			return $(this).attr('data-score');
 		}
 	});
+};
+
+
+$(document).on('turbolinks:load ajaxSuccess', function(){
+
+	refreshRating();
 
 	//for elevate zoom function
 	$('.img-zoom').elevateZoom({
