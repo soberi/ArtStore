@@ -1,4 +1,6 @@
 $(document).on('turbolinks:load', function(){
+	
+	//for products star ratings
 	$('.rating').raty({
 		starHalf: '<%= asset_path 'star-half.png' %>',
 		starOff: '<%= asset_path 'star-off.png' %>',
@@ -15,4 +17,17 @@ $(document).on('turbolinks:load', function(){
 			return $(this).attr('data-score');
 		}
 	});
+
+	//for elevate zoom function
+	$('.img-zoom').elevateZoom({
+		//scrollZoom : true, **zoom does not relocate if browser window is resized with a page reload**
+		zoomType: "lens",
+		lensShape: "round",
+		lensSize: 350,
+		zoomWindowFadeIn: 500,
+		zoomWindowFadeOut: 500,
+		lensFadeIn: 500,
+		lensFadeOut: 500
+	});
+
 });

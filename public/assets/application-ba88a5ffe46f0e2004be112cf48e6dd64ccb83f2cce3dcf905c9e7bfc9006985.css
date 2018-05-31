@@ -1,0 +1,519 @@
+/* line 9, /Users/Shelley/ArtStore/app/assets/stylesheets/comments.scss */
+.apple_pagination {
+  background: #e4e6e8;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 0;
+  cursor: default;
+}
+
+/* line 17, /Users/Shelley/ArtStore/app/assets/stylesheets/comments.scss */
+.apple_pagination a,
+.apple_pagination span {
+  padding: 0.2em 0.3em;
+}
+
+/* line 22, /Users/Shelley/ArtStore/app/assets/stylesheets/comments.scss */
+.apple_pagination .disabled {
+  color: #aaaaaa;
+}
+
+/* line 26, /Users/Shelley/ArtStore/app/assets/stylesheets/comments.scss */
+.apple_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background-color: #bebebe;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+
+/* line 40, /Users/Shelley/ArtStore/app/assets/stylesheets/comments.scss */
+.apple_pagination a {
+  text-decoration: none;
+  color: #4b545a;
+}
+
+/* line 45, /Users/Shelley/ArtStore/app/assets/stylesheets/comments.scss */
+.apple_pagination a:hover,
+.apple_pagination a:focus {
+  text-decoration: underline;
+}
+/* line 10, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+h3 {
+  font-size: 20px;
+}
+/* line 13, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+h3 a {
+  padding: 3px;
+  transition: 600ms;
+}
+/* line 18, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+h3 a:hover {
+  background-color: #5e6569;
+  color: #f0f1f1;
+  text-decoration: none;
+}
+
+/* line 25, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.row {
+  margin: 0;
+}
+
+/* line 30, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-item {
+  text-align: center;
+}
+/* line 33, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-item img {
+  transition: 600ms;
+  width: 100%;
+}
+/* line 38, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-item img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* line 43, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-info {
+  background-color: #5e6569;
+  color: #f0f1f1;
+  padding: 10px 2px 5px 2px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px 0px rgba(95, 101, 105, 0.32);
+}
+/* line 50, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-info h3 {
+  color: #f0f1f1;
+  margin-top: 0;
+}
+/* line 55, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-info a, .product-info a:visited {
+  color: #f0f1f1;
+  text-decoration: none;
+  transition: 600ms;
+  padding: 2px;
+}
+/* line 62, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-info a:hover {
+  color: #5e6569;
+  background-color: #f0f1f1;
+}
+
+/* line 70, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-data {
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 75, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.product-show {
+  margin-top: -10px;
+}
+
+/* line 80, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.edit-form {
+  text-align: center;
+}
+
+/* line 84, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.form-action {
+  margin-top: 20px;
+  transition: 600ms;
+}
+/* line 88, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.form-action input {
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
+/* line 95, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.show-form > input, textarea {
+  width: 50%;
+}
+
+/* line 100, /Users/Shelley/ArtStore/app/assets/stylesheets/products.scss */
+.order-item {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  background-color: #e4e6e8;
+  min-height: 100px;
+}
+/* line 9, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+html {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+/* line 13, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+body {
+  background-image: url("AS-background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding-top: 50px;
+}
+/* line 22, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+body a {
+  text-decoration: none;
+  color: #4b545a;
+}
+
+/* line 28, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.section-backdrop {
+  background-color: rgba(255, 255, 255, 0.55);
+  color: #4b545a;
+  width: 100%;
+}
+
+/* line 34, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-default {
+  background-color: #4b545a;
+  border-color: #52595d;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 5px 0px rgba(95, 101, 105, 0.32);
+  margin-bottom: 0;
+}
+
+/* line 45, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-default .navbar-nav > li a {
+  color: #e4e6e8;
+  background-color: #4b545a;
+  transition: 600ms;
+}
+/* line 51, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-default .navbar-nav > li a:hover {
+  color: #4b545a;
+  background-color: #e4e6e8;
+}
+
+/* line 59, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-brand img {
+  position: absolute;
+  height: 51px;
+  top: 0px;
+  left: 30px;
+}
+/* line 66, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-brand img:hover {
+  opacity: 0.8;
+}
+
+/* line 71, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-form {
+  margin-left: 55px;
+  border: none;
+  -webkit-box-shadow: inset 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+}
+/* line 77, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-form label {
+  color: #e4e6e8;
+}
+/* line 81, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-form .btn {
+  width: 100px;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  color: #4b545a;
+  background-color: #e4e6e8;
+  transition: 600ms;
+}
+/* line 91, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.navbar-form .btn:hover {
+  color: #e4e6e8;
+  background-color: #4b545a;
+}
+
+/* line 97, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.alert,
+.notice {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 104, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.page-section {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* line 109, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-weight: 350;
+  text-align: center;
+}
+
+/* line 114, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+/* line 119, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+h3 {
+  text-align: center;
+}
+
+/* line 123, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.container {
+  padding: 0;
+}
+
+/* line 127, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  bottom: 20%;
+}
+/* line 130, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption a {
+  color: #e4e6e8;
+}
+
+/* line 135, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators {
+  bottom: 20%;
+}
+/* line 138, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators li {
+  color: #e4e6e8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+/* line 143, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators .active {
+  background-color: #e4e6e8;
+}
+
+/* line 148, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.carousel-control {
+  transition: 800ms;
+}
+
+/* line 152, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.carousel-control:hover {
+  transition: 800ms;
+  opacity: 0.3;
+}
+
+/* line 159, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.first-contact button {
+  background-color: #4b545a;
+  color: #e4e6e8;
+  display: inline-block;
+  position: relative;
+  width: 270px;
+  border: none;
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 5px;
+}
+/* line 170, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.first-contact button a {
+  color: #e4e6e8;
+  text-decoration: none;
+  transition: 600ms;
+}
+/* line 176, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.first-contact button a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 11px;
+  right: 25px;
+  font-size: 1.5em;
+  transition: 600ms;
+}
+/* line 187, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.first-contact button:hover a {
+  padding-right: 25px;
+}
+/* line 191, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.first-contact button:hover a:after {
+  opacity: 1;
+  right: 45px;
+}
+
+/* line 197, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.about-section,
+.comment-section {
+  background-color: #e4e6e8;
+  padding: 20px;
+}
+
+/* line 203, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.contact-section {
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* line 208, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.form-btn {
+  margin-top: 10px;
+  width: 100px;
+  color: #4b545a;
+  background-color: #e4e6e8;
+  transition: 600ms;
+  box-shadow: 0px 2px 5px 0px rgba(95, 101, 105, 0.32);
+  border: 0;
+  border-radius: 4px;
+}
+/* line 218, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.form-btn input {
+  border: none;
+  background-color: transparent;
+}
+
+/* line 224, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.form-btn:hover {
+  color: #e4e6e8;
+  background-color: #4b545a;
+}
+
+/* line 229, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+footer {
+  background-color: #4b545a;
+  color: #e4e6e8;
+  text-align: center;
+  padding-top: 15px;
+  height: 50px;
+  box-shadow: 0px -2px 5px 0px rgba(95, 101, 105, 0.32);
+}
+
+/* line 238, /Users/Shelley/ArtStore/app/assets/stylesheets/simple_pages.scss */
+.panel {
+  margin: 20px;
+  padding: 20px;
+  color: #4b545a;
+  background-color: #e4e6e8;
+}
+/* line 10, /Users/Shelley/ArtStore/app/assets/stylesheets/users.scss */
+.sign-up-page {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 16, /Users/Shelley/ArtStore/app/assets/stylesheets/users.scss */
+.new-user,
+.new_user,
+.edit_user {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  text-align: center;
+}
+/* line 24, /Users/Shelley/ArtStore/app/assets/stylesheets/users.scss */
+.new-user .btn,
+.new_user .btn,
+.edit_user .btn {
+  margin-top: 10px;
+  width: 100%;
+  color: #4b545a;
+  background-color: #e4e6e8;
+  transition: 600ms;
+  box-shadow: 0px 2px 5px 0px rgba(95, 101, 105, 0.32);
+}
+/* line 32, /Users/Shelley/ArtStore/app/assets/stylesheets/users.scss */
+.new-user .btn input,
+.new_user .btn input,
+.edit_user .btn input {
+  border: none;
+  background-color: transparent;
+}
+/* line 38, /Users/Shelley/ArtStore/app/assets/stylesheets/users.scss */
+.new-user .btn:hover,
+.new_user .btn:hover,
+.edit_user .btn:hover {
+  color: #e4e6e8;
+  background-color: #4b545a;
+}
+
+/* line 46, /Users/Shelley/ArtStore/app/assets/stylesheets/users.scss */
+.custom-form-field input {
+  width: 100%;
+}
+
+/* line 51, /Users/Shelley/ArtStore/app/assets/stylesheets/users.scss */
+table {
+  color: #4b545a;
+  background-color: #e4e6e8;
+  margin: 20px auto;
+}
+
+/* line 57, /Users/Shelley/ArtStore/app/assets/stylesheets/users.scss */
+td,
+th {
+  padding: 10px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
