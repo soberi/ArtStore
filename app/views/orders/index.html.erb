@@ -11,6 +11,7 @@
 				</h4>
 				<p><%= order.product.description %></p>
 				<strong><%= number_to_currency(order.product.price.to_f, unit: "€") %></strong>
+				<p>ordered by: <%= order.user.first_name %></p>
 				<h3><%= link_to 'show', order %></h3>
 			</div>
 			

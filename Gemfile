@@ -74,3 +74,5 @@ gem 'stripe'
 
 gem 'simplecov', require: false, group: :test
 
+gem 'brakeman'
+
