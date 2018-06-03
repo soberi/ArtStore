@@ -5,7 +5,7 @@ Rails.application.configure do
   config.cache_classes = true
 
   config.cache_store = :dalli_store,
-                        (ENV["MEMCACHIER_SERVICES"] || "").split(","),
+                        (ENV["MEMCACHIER_SERVERS"] || "").split(","),
                         {:username => ENV["MEMCACHIER_USERNAME"],
                         :password => ENV["MEMCACHIER_PASSWORD"],
                         :failover => true,
