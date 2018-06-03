@@ -1,4 +1,4 @@
-
+<% cache @product do %>
 <%= image_tag(@product.image_url, class: "img-responsive product-show img-zoom", data_zoom_image: @product.image_url) rescue nil %>
 
 <div class="container-fluid product-data">
@@ -47,6 +47,7 @@
 
   
 </div>
+<% end %>
 
 <%= render "new_comment" %>
 

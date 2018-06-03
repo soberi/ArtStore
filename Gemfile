@@ -76,3 +76,5 @@ gem 'simplecov', require: false, group: :test
 
 gem 'brakeman'
 
+gem 'dalli'
+

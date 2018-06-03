@@ -1,20 +1,23 @@
-<div class="col-sm-6 col-md-4 product-item">
+<% cache product do %>
+  <div class="col-sm-6 col-md-4 product-item">
   	
-  	<%= link_to(image_tag(product.image_url, class: "img-responsive"), product) rescue nil %>
+  	 <%= link_to(image_tag(product.image_url, class: "img-responsive"), product) rescue nil %>
   	
-  	<div class="product-info">
-  	<% logger.debug "Product: #{product.name}" %>
-    <h3><%= link_to product.name, product %></h3>
+    <div class="product-info">
+      <% logger.debug "Product: #{product.name}" %>
+      <h3><%= link_to product.name, product %></h3>
   	
-  	<p><%= product.description %> | <%= product.medium %> | <%= number_to_currency(product.price, unit: "€") %></p>
+      <p><%= product.description %> | <%= product.medium %> | <%= number_to_currency(product.price, unit: "€") %></p>
   	
-  	<p><%= link_to 'show', product %> |
-  	<%= link_to 'edit', edit_product_path(product) %> |
+      <p><%= link_to 'show', product %> |
+      <%= link_to 'edit', edit_product_path(product) %> |
   	
-    <%= link_to product, class: "btn", method: :delete, data: { confirm: 'are you sure?' } do %>
-      <i class="glyphicon glyphicon-trash"></i>
-    <% end %>
-    </p>
-  	</div> 
+      <%= link_to product, class: "btn", method: :delete, data: { confirm: 'are you sure?' } do %>
+        <i class="glyphicon glyphicon-trash"></i>
+      <% end %>
+      </p>
+    </div> 
 
-</div>
+  </div>
+
+<% end %>
