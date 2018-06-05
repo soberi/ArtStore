@@ -7,10 +7,6 @@ class CommentsController < ApplicationController
 		@user = current_user
 		respond_to do |format|
 			if @comment.save
-				ProductChannel.broadcast_to @product.id, 
-					comment: CommentsController.render(partial: 'comments/comment', 
-					locals: {comment: @comment, current_user: current_user}),
-					average_rating: @product.average_rating
 				format.html { redirect_to @product, notice: "Thanks for leaving a comment." }
 				format.json { render :show, status: :created, location: @product }
 				format.js
