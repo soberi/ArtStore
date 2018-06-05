@@ -7,13 +7,16 @@ class CommentsController < ApplicationController
 		@user = current_user
 		respond_to do |format|
 			if @comment.save
-				ActionCable.server.broadcast 'product_channel', comment: @comment, average_rating: @comment.product.average_rating
+				ProductChannel.broadcast_to @product.id, 
+					comment: CommentsController.render(partial: 'comments/comment', 
+					locals: {comment: @comment, current_user: current_user}),
+					average_rating: @product.average_rating
 				format.html { redirect_to @product, notice: "Thanks for leaving a comment." }
 				format.json { render :show, status: :created, location: @product }
 				format.js
 			else
 				format.html { redirect_to @product, alert: 'Whoops something went wrong, try again.' }
-				format.json { remder json: @comment.errors, status: :unprocessable_entity }
+				format.json { render json: @comment.errors, status: :unprocessable_entity }
 			end
 		end
 	end
