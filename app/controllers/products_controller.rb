@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:show, :index]
+  before_action :update_comment_count, only: :show
   load_and_authorize_resource
   # GET /products
   # GET /products.json
@@ -21,6 +22,16 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @comments = @product.comments.order(created_at: :desc, id: :desc).paginate(page: params[:page], per_page: 5)
+    @comment_count = comment_count
+  end
+
+  # redis case
+  def comment_count
+    $redis.hget(:product_comment_count, @product.comments) || 0
+  end
+
+  def update_comment_count
+    $redis.hincrby(:product_comment_count, @product.comments, 1)
   end
 
   # GET /products/new
