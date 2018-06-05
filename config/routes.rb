@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   resources :users
   resources :orders, only: [:index, :show, :create, :destroy]
   
+  mount ActionCable.server => '/cable'
+
   get 'simple_pages/about'
 
   get 'simple_pages/contact'

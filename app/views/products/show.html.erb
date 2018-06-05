@@ -52,6 +52,9 @@
 <h3>This product has been rated: <%= @comment_count %> times!</h3>
 
 <%= render "new_comment" %>
+<div class="alert alert-info" style="display:none" role="alert">
+  A new comment was posted!
+</div>
 
 <div class="container-fluid comment-section">
   <p>highest rating YAY!!!</p>
@@ -59,6 +62,8 @@
   <p>lowest rating AW :(</p>
   <div class="rated" data-score="<%= @product.lowest_rating_comment %>"></div>
 </div>
+
+
 
 <%= render "comments" %>
 
