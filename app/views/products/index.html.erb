@@ -1,13 +1,12 @@
 
-<h1>products</h1>
+<h1>the gallery</h1>
 <h3><%= link_to 'add new product', new_product_path %></h3>
 
-<div class="container-fluid">
-  <div class="row">
-  	<% cache (cache_key_for_products) do %> 
-    	<%= render @products %>
-    <% end %>
-  </div>
+
+<div class="grid">
+  <% cache (cache_key_for_products) do %> 
+    <%= render @products %>
+  <% end %>
 </div>
 
 <div class="apple_pagination">
