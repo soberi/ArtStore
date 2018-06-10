@@ -21,6 +21,13 @@ describe Product do
 			expect(Product.new(description: "nice pic")).not_to be_valid
 		end
 	
+		it "returns highest rating of all comments" do
+			expect(product.highest_rating_comment).to eq 5
+		end
+
+		it "returns lowest rating of all comments" do
+			expect(product.lowest_rating_comment).to eq 1
+		end
 	end
 end
 
