@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   
   mount ActionCable.server => '/cable'
 
-  get 'simple_pages/about'
-
   get 'simple_pages/contact'
 
   post 'simple_pages/thank_you'

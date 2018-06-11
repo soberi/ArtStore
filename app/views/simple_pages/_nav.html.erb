@@ -16,31 +16,34 @@
       <div class="navbar-form navbar-left">
         <div class="form-group">
         <%= form_with(url: "/products", method: 'get', local: true) do |form| %>
-          <%= form.label :q, 'Take a look' %>
+          <%= form.label :q, 'browse' %>
           <%= form.text_field :q, id: 'q', value: params[:q] %>
-          <%= form.submit 'Search', class: 'btn' %>
+          <%= form.submit 'search', class: 'btn' %>
         <% end %>
         </div>
       </div>
       		
       <ul class="nav navbar-nav navbar-right">
+        
         <% if user_signed_in? %>
-          <li><%= link_to 'your account', edit_user_registration_path(current_user) %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <%= current_user.first_name %>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to 'your account', edit_user_registration_path(current_user) %></li>
+              <li><%= link_to "orders", orders_path %></li>
+              <li><%= link_to('logout', destroy_user_session_path, method: :delete) %></li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to('login', new_user_session_path) %></li>
         <% end %>
+
         <li><%= link_to "home", root_path %></li>
-        <li><%= link_to "about", simple_pages_about_path %></li>
+        <li><%= link_to "gallery", products_path %></li>
         <li><%= link_to "contact", simple_pages_contact_path %></li>
-        <li><%= link_to "products", products_path %></li>
-        <li><%= link_to "orders", orders_path %></li>
-      </ul>
-      <ul class="nav navbar-nav pull-right">
-        <li>
-          <% if user_signed_in? %>
-            <%= link_to('logout', destroy_user_session_path, method: :delete) %>
-          <% else %>
-            <%= link_to('login', new_user_session_path) %>
-          <% end %>
-        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
