@@ -23,7 +23,7 @@ class PaymentsController < ApplicationController
 					total: (@product.price*100).to_i
 				)
 				flash[:notice] = "Thanks for buying #{@product.name}, your order is on its way!"
-				UserMailer.order_confirmation(@user.email, @user.first_name, @product.name, @product.price*100.to_i ).deliver_now
+				UserMailer.order_confirmation(@user.email, @user.first_name, @product.name, (@product.price*100).to_i ).deliver_now
 			end
 
 		rescue Stripe::CardError => e

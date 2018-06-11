@@ -60,11 +60,13 @@
   													<table border="0" cellpadding="0" cellspacing="0">
   														<tr>
   															<td>
-  																<%= link_to image_tag('tw-logo.png', alt: 'twitter', width: "38", height: "38", style: 'display: block;', border: '0'), "https://www.twitter.com/soberi_10" %>
+  																<%= link_to "https://www.twitter.com/soberi_10" do %> 
+                                    <%= image_tag attachments['tw-logo.png'].url, alt: 'twitter', width: "38", height: "38", style: 'display: block;', border: '0' %>
+                                  <% end %>
   															</td>
   															<td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
   															<td>
-  																<%= link_to image_tag('fb-logo.png', alt: 'facebook', width: "38", height: "38", style: 'display: block;', border: '0'), "https://www.facebook.com/soberi.sketch/" %>
+  																<%= link_to image_tag(attachments['fb-logo.png'].url, alt: 'facebook', width: "38", height: "38", style: 'display: block;', border: '0'), "https://www.facebook.com/soberi.sketch/" %>
   															</td>
   														</tr>
   													</table>

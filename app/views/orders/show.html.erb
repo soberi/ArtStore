@@ -5,8 +5,8 @@
 		<ul>
 			<li><strong>order ID: </strong><%= @order.id %></li>
 			<li><strong>product name: </strong><%= @order.product.name %></li>
-			<li><strong>product price: </strong><%= number_to_currency(@order.product.price.to_f, unit: "€") %></li>
-			<li><strong>total price: </strong><%= number_to_currency(@order.total.to_f, unit: "€") %></li>
+			<li><strong>product price: </strong><%= number_to_currency(@order.product.price.to_i, unit: "€") %></li>
+			<li><strong>total price: </strong><%= number_to_currency(@order.total.to_i, unit: "€") %></li>
 		</ul>
 	</div>	
 
