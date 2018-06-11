@@ -3,6 +3,8 @@ class UserMailer < ApplicationMailer
 
 	def contact_form(email, name, message)
 		attachments.inline['mailer_img.jpg'] = File.read('app/assets/images/mailer_img.jpg')
+		attachments.inline['tw-logo.png'] = File.read('app/assets/images/tw-logo.png')
+		attachments.inline['fb-logo.png'] = File.read('app/assets/images/fb-logo.png')
 		@message = message
 			mail(from: email,
 				to: "sa.obery@gmail.com",
@@ -26,6 +28,8 @@ class UserMailer < ApplicationMailer
 
 	def order_confirmation(email, name, product, price)
 		attachments.inline['mailer_img.jpg'] = File.read('app/assets/images/mailer_img.jpg')
+		attachments.inline['tw-logo.png'] = File.read('app/assets/images/tw-logo.png')
+		attachments.inline['fb-logo.png'] = File.read('app/assets/images/fb-logo.png')
 		@appname = "Soberi ArtStore"
 		@name = name
 		@email = [:email]
